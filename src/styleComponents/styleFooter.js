@@ -1,0 +1,39 @@
+import styled from 'styled-components'
+import { Link } from 'react-router-dom'
+
+export const FDiv = styled.footer`
+    display: flex;
+    background-color: var(--color-neutral);
+    align-items: center;
+    padding: 15px 35px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-around;
+`
+export const CategoryC = styled(Link)`
+    display: flex;
+    flex-direction: column;
+    float: left;
+    list-style: none;
+    color: var(--color-white);
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+
+    &:hover path,
+    &:hover {
+        fill: var(--color-green) !important;
+        color: var(--color-green) !important;
+    }
+`
+
+export const Icon = styled.svg`
+    width: 24px;
+    height: 24px;
+    `
+export const Rout = styled.path`
+    fill: var(--color-white);
+`
